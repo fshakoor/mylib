@@ -3,10 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>MyLib</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="icons8-book-64.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <dialog class="dialog">
+        <fieldset>
+            <form action="" method="post">
+                <legend>Add New Book</legend>
+                <div class="input_title">
+                    <label for="name">Title:</label>
+                    <input id="title" type="text" name="title" required />
+                </div>
+                <div class="input_author">
+                    <label for="author">Author:</label>
+                    <input id="author" type="text" name="author" required />
+                </div>
+                <div class="input_pages">
+                    <label for="pages">Total Pages:</label>
+                    <input id="pages" type="number" name="pages" required />
+                </div>
+                <div class="input_status">
+                    <label for="pages">Status:</label>
+                    <input type="radio" id="read" name="status" value="read" required/>Read
+                    <input type="radio" id="not_read" name="status" value="not_read" required />Not Read
+                </div>
+            </form>
+            <button autofocus type="submit" class="add">Add Book</button>
+        </fieldset>
+    </dialog>
+    <div class="header">
+        <div class="title">My<span class="lib">Lib</span></div>
+        <button class="add_book">+</button>
+    </div>
+    <div class="content">
+        <div class="card">
+            <div class="book_title"><b>Title:</b> Atomic Habits</div>
+            <div class="book_author"><b>Author:</b> James Clear</div>
+            <div class="book_pages"><b>Pages:</b> 300</div>
+            <div class="read_status"><b>Status:</b> Read!</div>
+        </div>
+        <div class="card"></div>
+        <div class="card"></div>
+    </div>
+    <div class="footer">
+        <div class="github"><a href="https://github.com/fshakoor/top-library">fshakoor</a></div>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
