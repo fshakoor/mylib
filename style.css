@@ -63,7 +63,7 @@ body {
 
 .card {
     height: 38vh;
-    width: 24%;
+    width: 22%;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -71,6 +71,7 @@ body {
     align-items: center;
     text-wrap: wrap;
     font-weight: 300;
+    padding: 0 1vw;
 }
 
 .buttons {
