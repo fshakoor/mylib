@@ -30,8 +30,8 @@
                 </div>
                 <div class="input_status">
                     <label for="status">Status:</label>
-                    <input type="radio" id="status" name="status" value="Read!" class='status' required/>Read
-                    <input type="radio" id="no_status" name="status" value="Not Read!" class='status' required />Not Read
+                    <input type="radio" name="status" value="Read!" required/>Read
+                    <input type="radio" name="status" value="Not Read!" required />Not Read
                 </div>
                 <button autofocus type="submit" class="add">Add Book</button>
             </form>
@@ -45,11 +45,11 @@
         <div class="card">
             <div class="book_title">Title: Atomic Habits</div>
             <div class="book_author">Author: James Clear</div>
-            <div class="book_pages">Pages: 300</div>
+            <div class="book_pages">Pages: 320</div>
             <div class="read_status">Status: Read!</div>
             <div class="buttons">
-                <button class="toggle_status">Change Status</button>
-                <button class="delete">Delete</button>
+                <button class="toggle_status" id="staticButton">Change Status</button>
+                <button class="delete" id="staticDelete">Delete</button>
             </div>
         </div>
     </div>
