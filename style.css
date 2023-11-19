@@ -53,15 +53,17 @@ body {
 
 .content {
     display: flex;
-    gap: 1vw;
+    gap: 2vh;
     flex-wrap: wrap;
-    padding: 2vh 2vw;
+    padding: 4vh;
     background-color: var(--grey);
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-    height: 32vh;
-    width: 23vw;
+    height: 38vh;
+    width: 24%;
     background-color: var(--white);
     display: flex;
     flex-direction: column;
@@ -71,19 +73,41 @@ body {
     font-weight: 300;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2vh;
+    gap: 1vw;
+}
+
+.delete, .toggle_status {
+    border: 0;
+    padding: 1vh 1vw;
+    font-size: 1.3vw;
+    cursor: pointer;
+}
+
 .card:hover {
     background-color: var(--blue);
     color: var(--white);
     box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
     /* border: 1px solid var(--blue); */
     transition: 0.5s;
+
+    .delete, .toggle_status {
+        background-color: var(--white);
+        color: var(--blue);
+    }
 }
 
 @media (min-width: 0px) {
-    .card > * { font-size: 0.7rem; }
+    .card > * { font-size: 0.5rem; }
+  }
+@media (min-width: 700px) {
+    .card > * { font-size: 0.8rem; }
   }
 @media (min-width: 1001px){
-    .card > * { font-size: 1.2rem; }
+    .card > * { font-size: 1.1rem; }
 }
 
 .footer {
@@ -145,6 +169,7 @@ input {
     background-color: var(--blue);
     color: var(--white);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 ::backdrop {
